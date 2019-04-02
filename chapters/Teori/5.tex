@@ -132,3 +132,88 @@ tata cara untuk membuat pyserial seperti pada kode dibawah
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mochamad Arifqi Ramadhan | 1174074}
+\subsection{Soal 1}
+
+\textbf{Fungsi Device manager di Windows & Folder /dev di Linux}
+\begin{itemize}
+\item Fungsi Device Manager di Windows
+	Device Manager akan sangat membantu dalam mengelola (manage) semua hardware yang terpasang (dan terdeteksi) dalam suatu sistem Windows. Hardware seperti harddisk, kartu VGA, sound, keyboard, perangkat USB dll. akan sangat mudah untuk dikonfigurasi dari dalam Device Manager ini. ( mengetahui port arduinno)
+
+\item Fungsi Folder /dev di Linux
+/dev berfungsi mengetahui  direktori yang tersimpan konfigurasi device/hardware pada sistem. Contohnya folder /dev artinya file-file tersebut berada.
+
+	
+\subsection{Soal 2}	
+\textbf{Intall Arduino}
+
+Cara instalasi driver arduino :
+		\begin{enumerate}
+			\item Pertama download software arduino, extract bila file zip/rar
+			\item hubungkan Port USB Arduino UNO ke Port USB PC
+			\item lalu windows akan memunculkan pop up yang memberitahu bahwa ingin menginstall dirver, tapi nanti tidak akan menemukan drivernya
+			\item buka Device Manager, setelah Device Manager terbuka, silahkan cari “Unknown Device” yang berada di Other Device.
+			\item klik kanan pada unknown device tersebut lalu pilih update driver software
+			\item pilih browse my computer for driver software lalu masukkan directory dimana anda menyimpan driver arduino yang telah anda download tadi
+			\item setelah itu klik install dan tunggu hingga proses selesai
+			\item arduino pun sudah terbaca di pc anda 
+		\end{enumerate}
+
+
+\subsection{Soal 3}
+
+\textbf{Membaca baudrate dan port di komputer}
+Untuk membaca baudrate dan port di komputer pertama hbungkan arduino dengan komputer
+1. bisa dengan cara membuka Device manager
+2. lalu pilih ports (COM  dan LPT)
+3. pilih COM yang terhubung
+4. Pilih port setting dan lihat di Bit per second untuk baudrate
+
+Sedangkan untuk port
+lakukan proses 1 dan 2 seperti diatas
+Dan port dari arduino telah terbaca oleh PC
+	
+\subsection{Soal 4}
+
+\textbf{Sejarah library PySerial}
+
+	PySerial adalah library yang menyediakan dukungan untuk koneksi serial ("RS-232") melalui berbagai perangkat yang berbeda: port serial gaya lama, dongle Bluetooth, port infra merah, dan sebagainya. Ini juga mendukung port serial jarak jauh melalui RFC 2217 (sejak V2.5). dan PySerial pertama kali diluncurkan pada tahun 2002 yang makin berkembang dalam setiap versinya hingga tahun 2017 lalu.
+
+\subsection{Soal 5}
+
+\textbf{Fungsi-Fungsi di library PySerial}
+\begin{itemize}
+\item print(ser.name)         - meriksa port yang benar-benar digunakan
+\item ser.write(b'hello')     	- menulis tipe data string
+\item ser.readline()  	- untuk membaca string dari port serial
+\item  ser.read()         	 - membaca satu port
+\item ser.close()         	- menutup port
+\end{itemize}
+
+\subsection{Soal 6}
+
+\textbf{Perulangan dan Tidak Perulangan}
+	Perulangan digunakan untuk melakukan scanning/pengambilan data secara terus menerus(continue) artinya pengeksekusiannya terus berjalan auto selama ada scanning/pengambilan data. Sedangkan Tidak Pengulangan digunakan untuk menscanning/pengambilan data secara real time atau pengambilan datanya hanya sekali saja.
+
+
+\subsection{Soal 7}
+
+\textbf{Membuat fungsi dengan PySerial}
+
+
+ Import Serial
+
+Ser = serial.Serial (port, baudrate) #membuka serial port
+Ketengan : Ser adalah objek Serial, serial adalah kelas, Serial adalah method
+
+contoh fungsi : data = Ser.readline() artinya membaca data
+
+
+\subsection{Bukti Screenshoot}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/5/1174074/Teori/plagiarisme2.png}
+	\centering	
+	\caption{Cek Plagiat}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
