@@ -201,18 +201,19 @@ Jawaban soal ke-9
 \lstinputlisting[caption = Membuat dan membaca file CSV menggunakan library 1174083pandas., firstline=8, lastline=13]{src/4/1174083/Praktek/main2.py}
 
 \subsection{Bukti Screenshoot}
-
-\begin{figure}[H]
-	\includegraphics[width=10cm]{figures/4/1174083/Praktek/kode_praktek_1.png}
-	\centering
+\paragraph{}
+\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.6\textwidth]{figures/4/1174083/Praktek/kode_praktek_1.png}}
+	\caption{Contoh file}
+	\label{Contoh CSV}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[ht]
 	\includegraphics[width=10cm]{figures/4/1174083/Praktek/kode_praktek_2.png}
 	\centering
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[ht]
 	\includegraphics[width=10cm]{figures/4/1174083/Praktek/kode_praktek_3.png}
 	\centering
 \end{figure}
@@ -405,37 +406,52 @@ Fungsi yang menggunakan try except
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Arrizal Furqona Gifary}
-\subsection{Praktek}
-\begin{enumerate}
 
-\item Buatlah fungsi (ﬁle terpisah/library dengan nama NPM csv.py) untuk membuka ﬁle csv dengan lib csv mode list
-\lstinputlisting[firstline=10, lastline=20]{src/4/1174070/Praktek/d1174070_csv.py}
+\subsection{Soal 1}
+Buatlah  fungsi  (file  terpisah/library  dengan  nama  NPMcsv.py)  untuk  membuka file csv dengan lib csv mode list.
 
-\item Buatlah fungsi (ﬁle terpisah/library dengan nama NPM csv.py) untuk membuka ﬁle csv dengan lib csv mode dictionary
+\lstinputlisting[firstline=10, lastline=20]{src/4/1174070/Praktek/1174070_csv.py}
+
+\subsection{Soal 2}
+Buatlah  fungsi  (file  terpisah/library  dengan  nama  NPMcsv.py)  untuk  membuka file csv dengan lib csv mode dictionary.
+
 \lstinputlisting[firstline=22,lastline=34]{src/4/1174070/Praktek/1174070_csv.py}
 
-\item Buatlah fungsi (ﬁle terpisah/library dengan nama NPM pandas.py) untuk membuka ﬁle csv dengan lib pandas mode list
-\lstinputlisting[firstline=7,lastline=10]{src/4/1174070/Praktek/d1174070_pandas.py}
+\subsection{Soal 3}
+Buatlah fungsi (file terpisah/library dengan nama NPMpandas.py) untuk membuka file csv dengan lib pandas mode list.
 
-\item Buatlah fungsi (ﬁle terpisah/library dengan nama NPM pandas.py) untuk membuka ﬁle csv dengan lib pandas mode dictionary
-\lstinputlisting[firstline=12,lastline=15]{src/4/1174070/Praktek/d1174070_pandas.py}
+\lstinputlisting[firstline=7,lastline=10]{src/4/1174070/Praktek/1174070_pandas.py}
 
-\item Buat fungsi baru di NPM pandas.py untuk mengubah format tanggal menjadi standar dataframe
-\lstinputlisting[firstline=17,lastline=19]{src/4/1174070/Praktek/d1174070_pandas.py}
+\subsection{Soal 4}
+Buatlah fungsi (file terpisah/library dengan nama NPMpandas.py) untuk membuka file csv dengan lib pandas mode dictionary.
 
-\item Buat fungsi baru di NPM pandas.py untuk mengubah index kolom
-\lstinputlisting[firstline=21,lastline=23]{src/4/1174070/Praktek/d1174070_pandas.py}
+\lstinputlisting[firstline=12,lastline=15]{src/4/1174070/Praktek/1174070_pandas.py}
 
-\item Buat fungsi baru di NPM pandas.py untuk mengubah atribut atau nama kolom
-\lstinputlisting[firstline=25,lastline=29]{src/4/1174070/Praktek/d1174070_pandas.py}
+\subsection{Soal 5}
+Buat fungsi baru di NPMpandas.py untuk mengubah format tanggal menjadi standar dataframe.
 
-\item Buat program main.py yang menggunakan library NPM csv.py yang membuat dan membaca ﬁle csv
+\lstinputlisting[firstline=17,lastline=19]{src/4/1174070/Praktek/1174070_pandas.py}
+
+\subsection{Soal 6}
+Buat fungsi baru di NPMpandas.py untuk mengubah index kolom.
+
+\lstinputlisting[firstline=21,lastline=23]{src/4/1174070/Praktek/1174070_pandas.py}
+
+\subsection{Soal 7}
+Buat fungsi baru di NPMpandas.py untuk mengubah atribut atau nama kolom.
+
+\lstinputlisting[firstline=25,lastline=29]{src/4/1174070/Praktek/1174070_pandas.py}
+
+\subsection{Soal 8}
+Buat program main.py yang menggunakan library NPMcsv.py yang membuat dan membaca file csv.
+
 \lstinputlisting[firstline=8,lastline=10]{src/4/1174070/Praktek/main_izal.py}
 
-\item Buat program main2.py yang menggunakan library NPM pandas.py yang membuat dan membaca ﬁle csv
+\subsection{Soal 9}
+Buat program main2.py yang menggunakan library NPMpandas.py yang membuat dan membaca file csv.
+
 \lstinputlisting[firstline=12,lastline=14]{src/4/1174070/Praktek/main_izal.py}
 
-\end{enumerate}
 \begin{enumerate}
 	\item Tuliskan  peringatan  error  yang  didapat  dari  mengerjakan  praktek  keempat  ini, dan  jelaskan  cara  penanganan  error  tersebut.   dan  Buatlah  satu  fungsi  yang menggunakan gunakan try except untuk menanggulangi error tersebut.
 	
@@ -455,44 +471,53 @@ Fungsi yang menggunakan try except
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Mochamad Arifqi Ramadhan | 1174074}
-\subsection{Pengelolaan File CSV (Keterampilan Pemrograman)}
-\begin{enumerate}
-    \item Buatlah  fungsi  (file  terpisah/library  dengan  nama  \verb|NPM_csv.py|)  untuk  membuka file csv dengan lib csv mode list.
+
+\subsection{Soal 1}
+Buatlah  fungsi  (file  terpisah/library  dengan  nama  NPMcsv.py)  untuk  membuka file csv dengan lib csv mode list.
     
     \lstinputlisting[firstline=8, lastline=14]{src/4/1174074/Praktek/1174074_csv.py}
 
-    \item Buatlah  fungsi  (file  terpisah/library  dengan  nama  \verb|NPM_csv.py|)  untuk  membuka file csv dengan lib csv mode dictionary.
+\subsection{Soal 2}
+Buatlah  fungsi  (file  terpisah/library  dengan  nama  NPMcsv.py)  untuk  membuka file csv dengan lib csv mode dictionary.
    	
    	\lstinputlisting[firstline=16, lastline=20]{src/4/1174074/Praktek/1174074_csv.py}
 
-	\item Buatlah fungsi (file terpisah/library dengan nama \verb|NPM_pandas.py|) untuk membuka file csv dengan lib pandas mode list.
+\subsection{Soal 3}
+Buatlah fungsi (file terpisah/library dengan nama NPMpandas.py) untuk membuka file csv dengan lib pandas mode list.
 	
 	\lstinputlisting[firstline=7, lastline=11]{src/4/1174074/Praktek/1174074_pandas.py}
 		
-	\item Buatlah fungsi (file terpisah/library dengan nama \verb|NPM_pandas.py| untuk membuka file csv dengan lib pandas mode dictionary.
+\subsection{Soal 4}
+Buatlah fungsi (file terpisah/library dengan nama NPMpandas.py) untuk membuka file csv dengan lib pandas mode dictionary.
+
 
 	\lstinputlisting[firstline=13, lastline=16]{src/4/1174074/Praktek/1174074_pandas.py}
 
-	\item Buat fungsi baru di \verb|NPM_pandas.py| untuk mengubah format tanggal menjadi standar dataframe.
+\subsection{Soal 5}
+Buat fungsi baru di NPMpandas.py untuk mengubah format tanggal menjadi standar dataframe.
 
 	\lstinputlisting[firstline=25, lastline=27]{src/4/1174074/Praktek/1174074_pandas.py}
 
-	\item Buat fungsi baru di \verb|NPM_pandas.py| untuk mengubah index kolom.
+\subsection{Soal 6}
+Buat fungsi baru di NPMpandas.py untuk mengubah index kolom.
 	
 	\lstinputlisting[firstline=29, lastline=32]{src/4/1174074/Praktek/1174074_pandas.py}
 	
-	\item Buat fungsi baru di \verb|NPM_pandas.py| untuk mengubah atribut atau nama kolom.
+\subsection{Soal 7}
+Buat fungsi baru di NPMpandas.py untuk mengubah atribut atau nama kolom.
 	
 	\lstinputlisting[firstline=34, lastline=37]{src/4/1174074/Praktek/1174074_pandas.py}
 	
-	\item Buat program main.py yang menggunakan library \verb|NPM_csv.py| yang membuat dan membaca file csv.
+\subsection{Soal 8}
+Buat program main.py yang menggunakan library NPMcsv.py yang membuat dan membaca file csv.
 	
 	\lstinputlisting[firstline=8, lastline=15]{src/4/1174074/Praktek/main.py}
 	
-	\item Buat program main2.py yang menggunakan library \verb|NPM_pandas.py| yang membuat dan membaca file csv.
+\subsection{Soal 9}
+Buat program main2.py yang menggunakan library NPMpandas.py yang membuat dan membaca file csv.
 
 	\lstinputlisting[firstline=8, lastline=12]{src/4/1174074/Praktek/main2.py}
-\end{enumerate} 
+
 
 \subsection{Keterampilan Penanganan Error}
 
@@ -503,7 +528,8 @@ menggunakan gunakan try except untuk menanggulangi error tersebut.
 
 	\lstinputlisting[firstline=7, lastline=16]{src/4/1174074/Praktek/error.py}
 	
-	\par NameError adalah exception yang terjadi saat kode melakukan eksekusi terhadap local name atau global name yang tidak terdefinisi. Misalnya saat menjumlahkan variable yang tidak didefinisikan, memanggil function yang tidak ada, dan lain-lain.
+
+NameError adalah exception yang terjadi saat kode melakukan eksekusi terhadap local name atau global name yang tidak terdefinisi. Misalnya saat menjumlahkan variable yang tidak didefinisikan, memanggil function yang tidak ada, dan lain-lain.
 	
 \end{enumerate}
 
@@ -587,33 +613,39 @@ menggunakan gunakan try except untuk menanggulangi error tersebut.
 
 \subsection{Kode Program Praktek}
 \begin{figure}[H]
-	\includegrapichs[width=10cm]{figures/4/1174078/Prakter/c1.png}
-	\centering
-\end{figure}
-\begin{figure}[H]
-	\includegrapichs[width=10cm]{figures/4/1174078/Prakter/c2.png}
-	\centering
-\end{figure}
-\begin{figure}[H]
-	\includegrapichs[width=10cm]{figures/4/1174078/Prakter/c3.png}
-	\centering
-\end{figure}
-\begin{figure}[H]
-	\includegrapichs[width=10cm]{figures/4/1174078/Prakter/c4.png}
-	\centering
-\end{figure}
-\begin{figure}[H]
-	\includegrapichs[width=10cm]{figures/4/1174078/Prakter/c5.png}
-	\centering
-\end{figure}
-\begin{figure}[H]
-	\includegrapichs[width=10cm]{figures/4/1174078/Prakter/c6.png}
+	\includegraphics[width=10cm]{figures/4/1174078/Praktek/c1.png}
 	\centering
 \end{figure}
 
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/4/1174078/Praktek/c2.png}
+	\centering
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/4/1174078/Praktek/c3.png}
+	\centering
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/4/1174078/Praktek/c4.png}
+	\centering
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/4/1174078/Praktek/c5.png}
+	\centering
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{figures/4/1174078/Praktek/c6.png}
+	\centering
+\end{figure}
+
+
 \subsection{Cek Plagiat Praktek}
 \begin{figure}[H]
-	\includegrapichs[width=10cm]{figures/4/1174078/Prakter/c7.png}
+	\includegraphics[width=10cm]{figures/4/1174078/Praktek/c7.png}
 	\centering
 \end{figure}
 \subsection{Penangganan error}
