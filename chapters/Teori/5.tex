@@ -450,3 +450,49 @@ Untuk kali ini saya menemukan Type Error, yaitu error yang menampilkan jika type
 \lstinputlisting[firstline=8, lastline=17]{src/5/1174070/praktek/1174070.py}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Muhammad Reza Syachrani / 1174084}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+    \item fungsi device manager di windows adalah membantu dalam mengelola hardware yang terpasang dalam suatu sistem windows. Sedangkan folder /dev pada linux merupakan direktori yang berfungsi untuk menyimpan konfigurasi device atau hardware dari sistem
+    \item langkah-langkah instalasi driver Arduino :
+    \begin{enumerate}
+        \item Hubungkan sistem Arduino Uno ke computer dengan kabel USB type B
+        \item lalu akan muncul popup “Installing device driver software” pada bagian kanan dideskop PC.
+        \item Namun, sistem operasi windows tidak menyediakan driver untuk Arduino Uno, sehingga proses instalasinya dilakukan secara manual. Dengan cara membuka Device Manager, pada bagian Search Program and Files kita ketikkan device manager lalu klik
+        \item Kemudian cari Other device, kemudian klik dan pilih Unkonown device biasanya bertanda seru berwarna kuning, karena penginstalan tidak berjalan sempurna.
+        \item Lalu klik kanan pada “Unknown device” dan pilih Update Driver Software
+        \item Pilih Browser my computer for driver software
+        \item Lalu arahkan lokasi folder ke \ arduino-1.0.5\ driver. Dan pastikan check-box include subfolder dicentang, kemudian klik next.
+        \item Dan lanjut mengklik Install pada tampilan Windows Security
+        \item Terakhir akan muncul Windows has successfully update your driver software jika instalasi driver berhasil
+        \item Dan ingat nama COM Arduino Uno, karena nama COM yang digunakan untuk meng-upload program nantinya.
+    \end{enumerate}
+    \item Cara membaca baudrate bisa dilihat menggunakan Arduino Ide dengan cara mengklik icon serial monitor , sedangkan port dapat  dilihat pada device manager
+    \item pyserial merupakan sebuah serial module/library yang merangkum akses untuk port serial. Ini menyediakan backends untuk Python yang berjalan di Windows, Linux, BSD. Modul bernama "serial" secara otomatis memilih backend yang sesuai. Pyserial pertama kali diluncurkan pada tahun 2002.
+    \item Fungsi-fungsi pada library Pyserial :
+    \begin{enumerate}
+        \item Serial(), berfungsi untuk membuka port serial
+        \item write(), Berfungsi untuk mengirimkan data string ke port serial
+        \item readline(), Berfungsi untuk membaca sebuah string dari port serial. 
+        \item read(size), Berfungsi untuk membaca data dari port serial
+        \item close(), Berfungsi untuk menutup port serial
+    \end{enumerate}
+    \item Perulangan dibutuhkan saat membaca serial, karena agar data yang dibaca tidak hanya satu kali saja tetapi berkali kali, sehingga dengan adanya perulangan tersebut kita dapat membaca datanya berulang kali. Sedangkan perulangan tidak dibutuhkan ketika kita hanya membutuhkan datanya hanya satu. 
+    \item cara membuat fungsi menggunakan pyserial:
+    \begin{enumerate}
+        \item pertama mengimport library serial dengan cara "import serial"
+        \item kemudian membuat fungsi dengan mendefinisikan nama fungsi dengan cara def namafungsi():
+        \item lalu masukan isi fungsi dengan library pyserial, seperti serial(), read(), dll.
+        \item setelah itu panggil namafungsi().
+    \end{enumerate}
+    \item Scan Plagiarisme
+    \begin{figure}[ht!]
+    \includegraphics[width=5cm]{figures/5/1174084/Teori/c5_1.png}
+    \centering
+    \caption{plagiarisme}
+    \end{figure}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
