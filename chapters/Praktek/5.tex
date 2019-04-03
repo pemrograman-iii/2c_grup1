@@ -268,3 +268,53 @@ Fungsi yang menggunakan try except untuk menanggulangi error.
 	\centering
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dini Permata Putri}
+\subsection{Keterampilan Pemrograman}
+\begin{enumerate}
+	\item Buatlah  fungsi  (file  terpisah/library  dengan  nama  \verb|NPM_realtime.py|)  untuk mendapatkan data langsung dari arduino!
+
+	\lstinputlisting[firstline=8, lastline=29]{src/5/1174053/Praktek/1174053_realtime.py}
+	
+	\item Buatlah fungsi (file terpisah/library dengan nama \verb|NPM_save.py|) untuk mendapatkan data langsung dari arduino dengan looping!
+	
+	\lstinputlisting[firstline=8, lastline=15]{src/5/1174053/Praktek/1174053_save.py}
+
+\begin{figure}[ht]
+	\includegraphics[width=7cm]{figures/5/1174053/Praktek/1174053_save.png}
+	\centering
+	\caption{Hasil dari pembacaan fungsi untuk membaca file csv hasil arduino dan mengembalikan fungsi.}
+\end{figure}
+
+	\item Buatlah  fungsi  (file  terpisah/library  dengan  nama  \verb|NPM_realtime.py|) untuk mendapatkan data dari arduino dan langsung ditulis kedalam file csv!
+	
+	\lstinputlisting[firstline=8, lastline=29]{src/5/1174053/Praktek/1174053_realtime.py}
+
+	\item Buatlah fungsi (file terpisah/library dengan nama \verb|NPM_csv.py|) untuk membaca file csv hasil arduino dan mengembalikan ke fungsi!
+	
+	\lstinputlisting[firstline=8, lastline=16]{src/5/1174053/Praktek/1174053_csv.py}
+
+\end{enumerate}
+
+\textbf{Kode Program Praktek}
+
+\subsection{Ketrampilan Penanganan Error}
+Tuliskan  peringatan  error  yang  didapat  dari  mengerjakan  praktek  kelima  ini, dan  jelaskan  cara  penanganan  error  tersebut.   dan  Buatlah  satu  fungsi  yang menggunakan try except untuk menanggulangi error tersebut.
+
+Peringatan error di praktek kelima ini, yaitu:
+\begin{itemize}
+	\item Syntax Errors
+	Syntax Errors adalah suatu keadaan saat kode python mengalami kesalahan penulisan. Solusinya adalah memperbaiki penulisan kode yang salah.
+
+	\item Name Error
+	NameError adalah exception yang terjadi saat kode melakukan eksekusi terhadap local name atau global name yang tidak terdefinisi. Solusinya adalah memastikan variabel atau function yang dipanggil ada atau tidak salah ketik.
+
+	\item Type Error
+	TypeError adalah exception yang akan terjadi apabila pada saat dilakukannya eksekusi terhadap suatu operasi atau fungsi dengan type object yang tidak sesuai. Solusi dari error ini adalah mengkoversi varibelnya sesuai dengan tipe data yang akan digunakan.
+\end{itemize}
+
+\textbf{Fungsi yang menggunakan try except untuk menanggulangi error.}
+
+\lstinputlisting[firstline=8, lastline=23]{src/5/1174053/Praktek/1174053_error.py}
+
+\textbf{Kode Program Penanganan Error}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
