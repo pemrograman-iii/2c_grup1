@@ -1,4 +1,4 @@
-\section{Bakti QIlan Mufid | 1174083}
+﻿\section{Bakti QIlan Mufid | 1174083}
 \subsection{Soal 1}
 Apa itu fungsi device manager di windows dan folder /dev di linux.
 \begin{itemize}
@@ -496,3 +496,130 @@ Untuk kali ini saya menemukan Type Error, yaitu error yang menampilkan jika type
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ilham Muhammad Ariq}
+\subsection{Teori}
+\begin{enumerate}
+    \item Apa itu fungsi device manager di windows dan folder /dev di linux.
+   \par Device Manager dalam komputer Windows, adalah perluasan dari Microsoft Management Console. Device Manager menampilkan seluruh hardware yang bisa di-inisialisasi (dikenali) oleh Windows. Tampilannya sudah ter-organisir (dikelompokkan) sedemikian rupa sehingga akan memudahkan pengelolaan setiap hardware yang ada.Device Manager akan sangat membantu dalam mengelola (manage) semua hardware yang terpasang (dan terdeteksi) dalam suatu sistem Windows. Hardware seperti harddisk, kartu VGA, sound, keyboard, perangkat USB dll. akan sangat mudah untuk dikonfigurasi dari dalam Device Manager ini.
+    
+    
+    \par Folder /dev di linux ialah Directory yang berisi file device, baik device blok maupun device karakter. di dalamnya minimal harus ada file biner MAKEDEV untuk membuat device ini secara manual.
+
+    \item Jelaskan langkah-langkah instalasi driver dari arduino UNO di Windows
+  	\par Berikut ini adalah langkah-langkah instalasi driver dari arduino UNO di Windows
+	\begin{enumerate}
+		\item Pertama pastikan Arduino IDE telah terinstall.		
+		\item Hubungkan sistem minimun Arduino Uno ke komputer dengan kabel USB type B (kabel Printer).	
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/1.png}
+				\centering
+				\caption{Menghubungkan Port.}
+		\end{figure}		
+		\item Lalu pada bagian kanan didesktop PC anda, akan muncul popup “Installing device driver software” seperti pada gambar dibawah ini.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/2.png}
+				\centering
+				\caption{Muncul Pop up.}
+		\end{figure}	
+		\item Sistem operasi Windows tidak menyediakan driver untuk Arduino Uno seperti yang terlihat pada gambar dibawah ini, lalu proses instalasinya harus dilakukan secara manual.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/3.png}
+				\centering
+				\caption{Pop up instalasi Manual.}
+		\end{figure}
+		\item Buka Device Manager, caranya pada bagian Search Program and Files lalu ketikkan “device manager” (tanpa tanda petik), perhatikan gambar dibawah ini. Pada bagian Control Panel akan muncul Device Manager, klik untuk menjalankan.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/4.png}
+				\centering
+				\caption{membuka Device Manager.}
+		\end{figure}
+	\item Cari Unknown device pada bagian Other device, biasanya terdapat tanda seru berwarna kuning, itu disebabkan karena penginstallan tidak berjalan dengan sempurna.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/5.png}
+				\centering
+				\caption{Cari Unknown Device.}
+		\end{figure}
+		\item Klik kanan pada “Unknown device” kemudian pilih Update Driver Software.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/6.png}
+				\centering
+				\caption{Update Driver Software.}
+		\end{figure}
+		\item Pilih Browse my computer for driver software.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/7.png}
+				\centering
+				\caption{Pilih \textit{Browse my computer for driver software}}
+		\end{figure}
+		\item Arahkan lokasi folder ke folder \verb|..\arduino-1.0.5\drivers.| Pastikan check-box lalu centang include subfolders. Klik Next untuk melanjutkan instalasi driver.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/8.png}
+				\centering
+				\caption{Instalasi Driver}
+		\end{figure}
+		\item Kemudian lanjutkan dengan mengklik Install pada tampilan Windows Security.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/9.png}
+				\centering
+				\caption{Klik Install}
+		\end{figure}
+		\item  Jika instalasi driver berhasil maka akan muncul Windows has successfully updated your driver software.
+		\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/10.png}
+				\centering
+				\caption{Muncul \textit{Windows has successfully updated your driver software}}
+		\end{figure}
+		\item Perhatikan dan ingat nama COM Arduino Uno, karena nama COM ini yang akan digunakan untuk meng-upload program nantinya.
+			\begin{figure}[ht]
+				\includegraphics[width=7cm]{figures/5/1174087/Teori/11.png}
+				\centering
+				\caption{Muncul Nama Arduino}
+		\end{figure}
+	\end{enumerate}	    
+    
+    \item Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah
+terinstall driver
+
+\par Untuk melihat atau cara membaca baudrate dan port, hanya perlu menginstall Arduino IDE, kemudian membuka menu serial monitor yang berada di tab tools. Selanjutnya akan terlihat baudrate dan port yang sedang digunakan oleh arduino anda.
+	
+	\item Jelaskan sejarah library pyserial
+	
+	\par pySerial adalah modul API Python untuk mengakses port serial. pySerial menyediakan API yang seragam di berbagai sistem operasi, termasuk Windows, Linux, dan BSD. PySerial merupakan sebuah library yang digunakan untuk komunikasi ke port serial terutama untuk mikrokontroller. PySerial pertama kali diluncurkan pada tahun 2002 yang makin berkembang dalam setiap versinya hingga tahun 2017 lalu.
+
+
+	\item Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial
+	
+\par Fungsi-fungsi yang ada pada library PySerial :
+
+\begin{enumerate}
+	\item Serial - fungsi ini untuk membuka port serial.
+	\item read(size) - fungsi ini untuk membaca jumlah byte dari port serial.
+	\item write(data) - fungsi ini menulis data lewat port serial.
+	\item readline() - fungsi ini membaca sebuah string dari port serial.
+	\item close() - fungsi ini untuk menutup port serial.
+\end{enumerate}
+
+	\item Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial
+	
+	\par Didalam pembacaan serial pada arduino yang memerlukan membaca data secara berulang-ulang harus dengan perulangan. dan tidak membutuhkan perulangan ketika membaca data hanya dilakukan satu kali saja.
+	
+	\item Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial
+	\begin{itemize}
+	\item import library pyserial dengan cara " import serial"
+	\item kemudian membuat fungsi
+	\item buat object yang didalamnya ada kelas dan method serial
+	\item print object
+	\item jalankan kelas
+	\end{itemize}	
+	
+	\item Screenshoot Check Plagiarisme
+
+\begin{figure}[ht]
+ \includegraphics[width=7cm]{figures/5/1174087/Teori/plg.png}
+ \centering
+ \caption{Screenshoot Check Plagiarisme}
+\end{figure}	
+	
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
