@@ -217,3 +217,83 @@ contoh fungsi : data = Ser.readline() artinya membaca data
 	\caption{Cek Plagiat}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Dini Permata Putri}
+\begin{enumerate}
+
+\item Apa itu fungsi device manager di windows dan folder /dev di linux.\\
+jawab : \\
+Device Manager dalam komputer Windows, adalah perluasan dari Microsoft Management Console. Device Manager menampilkan seluruh hardware yang bisa di-inisialisasi (dikenali) oleh Windows. Tampilannya sudah ter-organisir (dikelompokkan) sedemikian rupa sehingga akan memudahkan pengelolaan setiap hardware yang ada.\\
+
+Fungsi Device Manager Windows\\
+Device Manager akan sangat membantu dalam mengelola (manage) semua hardware yang terpasang (dan terdeteksi) dalam suatu sistem Windows. Hardware seperti harddisk, kartu VGA, sound, keyboard, perangkat USB dll. akan sangat mudah untuk dikonfigurasi dari dalam Device Manager ini.\\
+folder /dev di linux
+Directory ini berisi file device, baik device blok maupun device karakter. di dalamnya minimal harus ada file biner MAKEDEV untuk membuat device ini secara manual.\\
+
+\item Jelaskan langkah-langkah instalasi driver dari arduino\\
+jawab :\\
+- setalah anda berhasil mengunduh file installer (sekitar 80 Mb), double click-lah file tersebut untuk segera memulai proses instalasi\\
+- setelah file installer dijalankan, akan muncul jendela 'Licanse Agreement'. Klik aja tombol 'I Agree'\\
+- berikutnya anda akan diminta memasukan folder instalasi Arduino. Biarkan default di C:/Program Files/Arduino. atau kalau mau diganti juga bisa\\
+- setelah itu akan muncul jendela 'Setup Installation Options'. Sebaiknya dicentang semua opsinya\\
+- selanjutnya proses instalasi dimulai\\
+- ditengah proses instalasi, jika komputer anda belum terinstal driver USB, maka akan muncul jendela 'Security Warning' sbb. click tombol instal.\\
+- tunggu sampai proses instalasi 'Complated'\\
+- pada tahap ini software IDE Arduino sudah terinstal. coba cek di Start Menu Windows anda atau di desktop seharusnya ada ikon Arduino. jika sudah menemukannya, jalankan aplikasi tersebut. dan muncul splash screen\\
+- beberapa detik kemudian, jendela IDE Arduino akan muncul\\
+
+\item Jelaskan bagaimana cara membaca baudrate dan port dari komputer yag sudah terinstall driver\\
+jawab : \\
+untuk membaca baudrate menggunakan Arduino IDE, sedangkan membaca port menggunakan device manager\\
+
+\item Jelaskan sejarah library pyserial\\
+jawab :\\
+Pyserial adalah library/modul Python siap-pakai dan gratis yang dibuat untuk memudahkan kita dalam membuat program komunikasi data serial RS232 dalam bahasa Python.\\
+
+Jika modul USB-2REL dapat kita kontrol dengan mudah menggunakan Python dan PyUSB (lihat pembahasannya di sini dan di sini), maka modul SER-2REL juga dapat kita kontrol dengan mudah menggunakan Python dengan bantuan modul PySerial.\\
+
+\item jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial\\
+jawab :\\
+- SER2REL = serial.Serial(“COM1”, 2400)\\
+
+Jika binding berhasil maka port serial COM1 akan di-open dan siap digunakan. Untuk mengetes apakah COM1 sudah open dan siap digunakan, kita gunakan fungsi isOpen sebagai berikut:\\
+
+- SER2REL.isOpen()\\
+
+Fungsi ini menghasilkan nilai True jika COM1 sudah open dan nilai False jika sebaliknya. Pada eksperimen kita, SER2REL.isOpen() menghasilkan nilai True yang berarti kita sudah dapat mengirim dan menerima data ke dan dari port serial COM1.\\
+
+\item Jelaskan kenapa butuh perulangan dalam tidak butuh perulangan dalam membaca serial\\
+jawab :\\
+Perulangan atau dalam istilah lain disebut dengan loop. Perulangan digunakan ketika kamu harus menyelesaikan sebuah task dengan jumlah yang besar dengan menggunakan pola yang sama. Syaratnya tentu saja, kamu harus mengetahui bagaimana pola atau alur dari task tersebut. \\
+
+Di dalam Python, ada dua jenis perulangan yang lazim digunakan, yaitu:\\
+
+- For\\
+Adalah suatu bentuk perulangan yang mengerjakan ”bagian pernyatan yang sama” secara berulang kali berdasarkan syarat/kondisi yang ditentukan. Cara kerja ini digunakan untuk menyelesaikan task dengan cara yang sama dan dengan hasil yang berbeda.\\
+
+- While\\
+Digunakan  untuk melakukan task perulangan selama kondisi nya bernilai benar. Logika pengecakan adalah sama dengan statement IF untuk menentukan benar atau salah. Berikut ini adalah struktur dari while\\
+
+\item Jelaskan bagaimana cara meembuat fungsi yang menggunakan pyserial\\
+jawab :\\
+membuat fungsi menggunakan pyserial, dibuat dengan kata kunci def kemudian diikuti dengan nama fungsinya.\\
+contoh :\\
+def nama\_fungsi():\\
+	print "Hello ini Fungsi"\\
+
+setelah kita buat, kita bisa mmanggilnya seperti ini:\\
+nama\_fungsi()\\
+sebagai contoh, coba tulis kode program berikut:\\
+sama seperti blok kode yang lain, kita juga harus memberikan identasi (tab atau spasi 2x) untuk menuliskan isi fungsi.\\
+
+\# membuat fungsi\\
+def salam():\\
+	print "Hello, Selamat Pagi"\\
+\#\# pemanggilan fungsi\\
+salam()\\
+hasilnya : \\
+Hello, Selamat Pagi\\
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
