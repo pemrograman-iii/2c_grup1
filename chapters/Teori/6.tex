@@ -1,4 +1,4 @@
-﻿\section{Dini Permata Putri}
+\section{Dini Permata Putri}
 \begin{enumerate}
 
 
@@ -647,3 +647,142 @@ Perbedaan pada fungsi plot adalah pada bentuk gambar grafik yang dihasilkan pada
     
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mochamad Arifqi Ramadhan | 1174074}
+\subsection{Pemahaman Teori}
+
+\subsubsection{Apa itu fungsi library matplotlib}
+\hfill \break
+Matplotlib merupakan modul yang digunakan untuk visualisasi grafik. Melalui data-data yang diperoleh dari hasil komputasi, kita dapat menggambarkan grafik yang diinginkan. Didalamnya kita dapat membuat grafik 2D, 3D, grafik polar, grafik kontur, dan sebagainya.
+
+\subsubsection{Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib}
+\hfill \break
+ Membuat sumbu x dan y bisa dilakukan dengan cara membuat variabel baru dengan nama x dan Y, dimana setiap variabelnya memiliki nilai. 
+Berikut Contohnya:
+\lstinputlisting[firstline=1, lastline=14]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/sumbu.png}
+    \centering
+    \caption{Sumbu X dan Y}
+\end{figure}
+
+\subsubsection{Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib}
+\hfill \break
+Perbedaan setiap Plot di matplotlib terletak pada bentuk atau tampilan yang dihasilkan. 
+Berikut Perbedaanya:
+\begin{itemize}
+    \item line
+   Berfungsi menunjukkan nilai-nilai/data dalam waktu tertentu.
+   \lstinputlisting[firstline=16, lastline=22]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/plot_line.png}
+    \centering
+    \caption{Plot Line}
+\end{figure}
+    \item bar
+  Berfungsi menggambarkan perkembangan nilai-nilai suatu objek penelitian dalam kurun waktu tertentu.
+   \lstinputlisting[firstline=24, lastline=37]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/plot_bar.png}
+    \centering
+    \caption{Plot Bar}
+\end{figure}
+    \item histogram
+   Berfungsi untuk menamplikani distribusi /penyebaran suatu data.
+    \lstinputlisting[firstline=39, lastline=44]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/histogram.png}
+    \centering
+    \caption{Diagram Histogram}
+\end{figure}
+    \item scatter
+    Berfungsi untuk  menunjukan hubungan antara dua variabel.
+    \lstinputlisting[firstline=46, lastline=53]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/plot_scatter.png}
+    \centering
+    \caption{Plot Scatter}
+\end{figure}
+    \item Stack plot
+  Berfungsi untuk  membandingkan sebuah data dengan kumpulan data.
+    \lstinputlisting[firstline=55, lastline=68]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/stack_plot.png}
+    \centering
+    \caption{Stack Plot}
+\end{figure}
+\end{itemize}
+
+\subsubsection{Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut}
+\hfill \break
+Legend adalah penjelasan garis dilengkapi dengan sampel garis yang dijelaskan. Untuk membuat legenda pada plot anda dapat menggunakan syntax fungsi legend
+ Label digunakan untuk memberikan nama pada grafik. Untuk membuat legenda pada plot anda dapat menggunakan syntax fungsi labels
+\lstinputlisting[firstline=70, lastline=86]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/legend_label.png}
+    \centering
+\end{figure}
+
+\subsubsection{Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya}
+\hfill \break
+Subplot di matplotlib berfungsi untuk menampilkan dan membuat lebih dari 1 grafik/plot dalam sebuah program.
+Berikut Contooh Subpolt dengan 9 Plot
+\lstinputlisting[firstline=88, lastline=124]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/9_plot.png}
+    \centering
+    \caption{Subplot}
+\end{figure}
+
+\subsubsection{Sebutkan semua parameter color yang bisa digunakan (contoh: m,c,r,k,... dkk)}
+\hfill \break
+Untuk parameter color yang bisa digunakan :
+\begin{enumerate}
+    \item Parameter color(warna)
+   'r' untuk warna Red (Merah)
+    'g' untuk warna Green (Hijau)
+    'b' untuk warna Blue (Biru)
+   'c' untuk warna Cyan (Biru Muda)
+    'm' untuk warna Mangenta (Merah Tua)
+    'y' untuk warna Yellow (Kuning)
+    'k' untuk warna black (Hitam)
+Ket : penggunaan parameter color tanpa tanda kutip(' ')
+\end{enumerate}
+\subsubsection{Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri}
+\hfill \break
+
+Histogram adalah grafik yang menampilkan frekuensi data menggunakan batang, dimana angka dikelompokkan dalam rentang tertentu. Dengan kata lain, frekuensi setiap elemen data di dalam daftar ditunjukkan menggunakan histogram. 
+Berikut contoh histogram
+\lstinputlisting[firstline=126, lastline=131]{src/6/1174074/Teori/teori_6.py}
+dan ini merupakan grafik histogram tersebut.
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/plot_histogram.png}
+    \centering
+    \caption{Diagram Histogram}
+\end{figure}
+
+\subsubsection{Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct}
+\hfill \break
+Plot pie (atau diagram lingkaran) adalah grafik statistik lingkaran yang dibagi menjadi beberapa irisan untuk menggambarkan proporsi numerik. Pie baik untuk menampilkan data proporsional dan biasanya ditampilkan  dalam persentase.
+Berikut Contoh Plot Pie:
+\lstinputlisting[firstline=133, lastline=145]{src/6/1174074/Teori/teori_6.py}
+\begin{figure}[H]	
+    \includegraphics[width=5cm]{figures/6/1174074/Teori/plot_pie.png}
+    \centering
+    \caption{Plot Pie}
+\end{figure}
+\begin{itemize}
+    \item label
+    Label digunakan untuk mempermudah pembaca dalam membaca diagram pie
+    \item color
+    warna digunakan untuk membedakan setiap data
+    \item startangle
+    Digunakan untuk sudut yang digunakan saat memulai diagram pie tersebut
+    \item shadow
+    bayangan digunakan untuk membuat bayangan dari setiap diagram pie yang menonjol
+    \item explode
+    explode digunakan untuk mengeluarkan suatu data agar data tersebut terlihat menonjol
+    \item autopct
+    Digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan
+\end{itemize}
+\subsection{Praktek}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
