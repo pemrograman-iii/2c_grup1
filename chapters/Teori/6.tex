@@ -587,4 +587,63 @@ Perbedaan pada fungsi plot adalah pada bentuk gambar grafik yang dihasilkan pada
     \centering
     \caption{Screenshoot Plagiarisme}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Muhammad Reza Syachrani / 1174084}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+    \item Matplotlib adalah library plotting 2D Python yang menghasilkan gambar. Matplotlib dapat membuat plot, histogram, power spectra, grafik batang, grafik error, scatterplot, dll, dengan beberapa baris code pada python.
+    \item langkah-langkah membuat sumbu X dan Y di matplotlib :
+    \begin{itemize}
+        \item mengimport pyplot dari library matplotlib
+        \item menentukan nilai sumbu x dan y pada variable menggunakan list
+        \lstinputlisting[firstline=8, lastline=14,]{src/6/1174084/Teori/1174084.py}
+    \end{itemize}
+    \item Perbedaan fungsi dan cara pakai untuk berbagai jenis (bar, histogram, scatter, line, dll) plot di matplotlib :
+    \begin{itemize}
+        \item Bar berfungsi menampilkan grafik yang frekunsi data menggunakan batang, yang nilai koordinat x dan y ditentukan. Dalam penggunaan plot bar menggunakan fungsi bar yang terdapat dalam pyplot
+        \lstinputlisting[firstline=16, lastline=25,]{src/6/1174084/Teori/1174084.py}
+        \item Histogram berfungsi menampilkan grafik yang frekuensi data menggunakan batang, dimana nilai dikelompokkan dalam rentang tertentu dan  Dalam penggunaan plot histogram menggunakan fungsi hist yang terdapat dalam pyplot 
+        \lstinputlisting[firstline=27, lastline=35,]{src/6/1174084/Teori/1174084.py}
+        \item Scatter berfungsi menampilkan grafik yang menunjukkan hubungan antara dua set nilai menggunakan titik-titik dan Dalam penggunaan plot scatter menggunakan fungsi scatter yang terdapat dalam pyplot
+        \lstinputlisting[firstline=8, lastline=14,]{src/6/1174084/Teori/1174084.py}
+        \item Line berfungsi menampilkan grafik dari dua set nilai yang menggunakan garis.
+        \lstinputlisting[firstline=37, lastline=47,]{src/6/1174084/Teori/1174084.py}
+    \end{itemize}
+    \item Cara menggunakan legend adalah payplot.legend() dan menambahkan labelnya seperti dibawah ini:
+    \lstinputlisting[firstline=21, lastline=23,]{src/6/1174084/Teori/1174084.py}
+    Penggunaan legend berfungsi untuk memudahkan kita membaca grafik yang kita hasilkan karena kita memberi informasi pada data yang ditampilkan. sedangkan label kita memberikan nama kepada variable yang membedakan antara variable yang satu dengan yang lain.
+    \item fungsi dari subplot di matplotlib adalah untuk bisa membuat lebih dari 1 grafik dalam sebuah program. Cara penggunaannya sebagai contoh berikut :
+    \lstinputlisting[firstline=49, lastline=73,]{src/6/1174084/Teori/1174084.py}
+    \item Parameter warna yang bisa digunakan :
+    \begin{itemize}
+        \item R untuk warna Red atau Merah
+        \item G untuk warna Green atau Hijau
+        \item B untuk warna Blue atau Biru
+        \item C untuk warna Cyan atau Biru Muda
+        \item M untuk warna Mangenta atau Merah Tua
+        \item Y untuk warna Yellow Atau Kuning
+        \item K untuk warna Black atau Hitam
+    \end{itemize}
+    \item Cara kerja dari fungsi histogram boleh memiliki jumlah data variabel yang tidak sama. Contohnya  nilai x nya ada 60 sedangkan nilai Y nya ada 6 nilai, itu tidak akan jadi masalah karena diagram ini digunakan untuk mendata dari rentang tertentu atau kebutuhan lainnya. Dan ini adalah contoh dari penggunaan histogram :
+    \lstinputlisting[firstline=27, lastline=35,]{src/6/1174084/Teori/1174084.py}
+    \item Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels,colors, startangle, shadow, explode, autopct
+    \begin{itemize}
+    \item Label
+    Label digunakan untuk mempermudah pembaca yaitu memberikan nama pada variable di diagram pie
+    \item Color merupakan Warna yang dimunculkan pada setiap data
+    \item Startangle digunakan untuk sudut awal pada diagram pie tersebut
+    \item Shadow
+    Shadow(Bayangan) digunakan untuk membuat bayangan pada setiap diagram pie yang menonjol
+    \item Explode digunakan untuk mengeluarkan suatu data agar data tersebut menjadi terlihat lebih menonjol
+    \item Autopct digunakan menyesuaikan berapa angka yang ada dibelakang koma
+    \end{itemize}
+    \item Scan Plagiarisme
+    \begin{figure}[ht!]
+    \includegraphics[width=5cm]{figures/6/1174084/Teori/c6_1.png}
+    \centering
+    \caption{plagiarisme}
+    \end{figure}
+    
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
