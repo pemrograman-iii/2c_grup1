@@ -1,0 +1,91 @@
+\section{Dini Permata Putri}
+\begin{enumerate}
+
+
+\item 1. Apa itu fungsi library Matplotlib
+Matplotlib adalah sebuah library pada python yang digunakan untuk membuat diagram. Library ini biasanya menghasilkan ploting 2D.\\
+
+Ada plot untuk menampilkan data secara 2D atau 3D. sehingga kamu dapat menampilkan data yang telah kamu olah sesuai kebutuhan. Matplotlib pun terintegrasi dengan ipython notebook atau jupyter dimana kamu dapat membuat sebuah buku interaktif yang dapat diberi penjelasan dan kode yang disisipkan begitupun hasil plottingnya.\\
+
+\item 2. Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib.
+A. Klik kanan scatter chart dan klik pilih data dalam menu konteks , lalu pilih "Select Data
+
+B.Dalam kotak dialog sumber data dan sumber keluar , klik untuk menyoroti Y pada kolom. lalu klik tombol ubah pada tombol di legenda entrl.
+
+C. Sekarang kotak dialog di edit pada series keluar , abis itu silahkan tukar Nilai seri X dan Nilai seri Y lalu klik tombol OK untuk menutup kedua kotak dialog.\\
+
+\item 3. Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter.dll) jenis plot di matloptlib
+Untuk perbedaan fungsi plot yang digunakan adalah bentuk bentuk grafik yang akan di tampilkan sesuai dengan perintah yang digunakan pada pemogramannya.\\
+
+line
+    Perintah yang digunakan untuk membuat grafik line sebagai berikut.
+x = [2,4,6,5,42,543,5,3,73,64,42,97,63,76,63,8,73,97,\\
+23,45,56,89,45,3,23,2,5,78,23,56,67,78,8,3,78,34,67,\\
+23,324,234,43,544,54,33,223,443,444,234,76,432,233,23,\\
+232,243,222,221,254,222,276,300,353,354,387,364,309]\\
+
+
+
+Bar itu di dalam Penggunaan plot bar koordinat x nya itu yang awal, dan untuk Y nya adalah yang kedua.\\
+
+Histrogram itu di dalam penggunaan plot histogram titik x nya bisa tidak sama dengan titik Y. untuk penggunaannya bisa sebagai berikut.\\
+
+scatter untuk penggunaa plot scatter atau bisa juga d bilang diagram titik.\\
+
+Stack plot untuk penggunaan stack plot ini seperti diagram line, tapi ada fill colornya,jadi antar line itu bisa berdekatan.\\
+
+\item 4. Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut.
+Contoh source code lengkap disertai dengan link "editor" untuk mencoba (try it) dan melihat hasil (preview) kode.\\
+
+Elemen yang akan ditambahkan ke legenda ditentukan secara otomatis, ketika Anda tidak memberikan argumen tambahan.\\
+
+Garis-garis spesifik dapat dikecualikan dari pemilihan elemen legenda otomatis dengan mendefinisikan label dimulai dengan garis bawah.\\
+
+\item 5. Jelaskan apa fungsi dari subplot di matplotlib dan fungsi dari subplot dari matplotlib untuk bisa membuat lebih dari 1 grafik dalam sebuah program.\\
+
+Misalnya, kita dapat membuat sumbu inset di sudut kanan atas sumbu lain dengan mengatur posisi x dan y ke 0,65 yaitu, mulai dari 65 peren dari lebar dan 65 persen  dari ketinggian gambar dan x dan y meluas ke 0,2 yaitu, ukuran sumbu adalah 20 persen  dari lebar dan 20persen dari tinggi gambar.\\
+
+Simple Grids of Subplots itu kebutuhan yang cukup umum sehingga Matplotlib memiliki beberapa rutinitas kenyamanan yang membuatnya mudah dibuat. Level terendah adalah plt.subplot (), yang membuat subplot tunggal di dalam kisi. Seperti yang Anda lihat, perintah ini membutuhkan tiga argumen bilangan bulat — jumlah baris, jumlah kolom, dan indeks plot yang akan dibuat dalam skema ini, yang berjalan dari kiri atas ke kanan bawah.\\
+Contohnya:\\
+for i in range(1, 7):
+    plt.subplot(2, 3, i)
+    plt.text(0.5, 0.5, str((2, 3, i)),
+             fontsize=18, ha='center')
+             
+The Whole Grid in One Go itu  membuat grid besar subplot, terutama jika Anda ingin menyembunyikan label sumbu x dan y pada plot bagian dalam. Untuk tujuan ini, plt.subplots () adalah alat yang lebih mudah digunakan.\\
+ 
+\item 6. Sebutkan semua parameter color yang bisa digunakan(contoh: m,c,r,k,...dkk)
+Tipe Warna RGB
+    Untuk keterangannya sebagai berikut
+    R untuk warna Red atau Merah
+    G untuk warna Green atau Hijau
+    B untuk warna Blue atau Biru.\\
+    
+Tipe warna CMYK
+    Untuk keterangannya sebagai berikut
+    C untuk warna Cyan atau Biru Muda
+    M untuk warna Mangenta atau Merah Tua
+    Y untuk warna Yellow Atau Kuning
+    K untuk warna blacK atau Hitam.\\
+
+\item 7. Jelaskan bagaimana cara kerja dari fungsi hist , sertakan ilustrasi dan gambar sendiri.
+Untuk fungsi histogram ini kedua titik koordinat boleh tidak sama. Misalnya x nya ada 10 nilai sedangkan Y nya ada 5 nilai, itu tidak akan jadi masalah karena diagram ini digunakan untuk mendata usia dari rentang tertentu atau kebutuhan lainnya.\\
+
+Ini merupakan contoh dari penggunaan histogram.\\
+
+\item 8. Jelaskan lebih dalam tentang parameter dari fungsi pie diantaranya labels , color , startangle , shadow , explode , autopct.
+Jika jumlah x <1, maka nilai x memberikan area fraksional secara langsung dan array tidak akan dinormalisasi.\\
+
+labels : Label digunakan untuk mempermudah pembaca dalam membaca diagram pie.\\
+
+color : warna digunakan untuk membedakan antar data.\\
+
+startangle : Digunakan untuk sudut yang digunakan untuk memulai diagram pie tersebut.\\
+
+shadow :  bayangan digunakan untuk membuat bayangan dari setiap diagram pie yang menonjol.\\
+
+explode : explode digunakan untuk mengeluarkan suatu data agar data tersebut terlihat menonjol.\\
+
+autopct : Digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan.\\
+
+\end{enumerate}
