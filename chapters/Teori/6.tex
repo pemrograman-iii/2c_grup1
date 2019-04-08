@@ -355,3 +355,125 @@ Buatlah librari fungsi (file terpisah/library dengan nama NPMplot.py) untuk plot
 \subsection{Penanganan Error}
 Tuliskan  peringatan  error  yang  didapat  dari  mengerjakan  praktek  keenam  ini, dan  jelaskan  cara  penanganan  error  tersebut. dan  Buatlah  satu  fungsi  yang menggunakan try except untuk menanggulangi error tersebut.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bakti Qilan Mufid | 1174083}
+\subsection{Teori}
+\subsubsection{Apa itu fungsi library matplotlib}
+\hfill \break
+\verb|matplotlib| adalah librari plotting 2D Python yang menghasilkan gambar publikasi bermutu di dalam berbagai format hardcopy dan lingkungan interaktif sepanjang platform. \verb|matplotlib| dapat digunakan di dalam script Python, shell Python dan ipython (ala MATLAB®* or Mathematica®), server aplikasi web, dan enam GUI toolkit. matplotlib mencoba untuk membuat hal mudah menjadi lebih mudah dan hal sulit menjadi mungkin. Kamu dapat membuat plot, histogram, power spectra, grafik batang, grafik error, scatterplot, dll, hanya dengan beberapa baris code.
+
+\subsubsection{Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib}
+\hfill \break
+Untuk membuat sumbu X dan Y kita bisa membuatnya menggunakan list untuk mempermudah penyimpanan nilai pada setiap sumbunya. seperti pada contoh berikut:
+\lstinputlisting[firstline=11, lastline=19]{src/6/1174083/Teori/1174083.py}
+
+maka ketika di run akan menghasilkan diagram sebagai beriku:
+\begin{figure}[ht]	
+    \includegraphics[width=4cm]{figures/6/1174083/Teori/1.png}
+    \centering
+    \caption{penjelasan membuat sumbu x dan y}
+    \label{1}
+\end{figure}
+
+\subsubsection{Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib}
+\hfill \break
+Macam-macam plot di matplotlib, diantaranya:
+\begin{enumerate}
+\item Plot Garis \hfill \break
+Diagram Garis (\textit{Line Chart}) digunakan untuk melihat trend/ pergerakan suatu variabel data tertentu. Diagram garis juga dapat disebut sebagai diagram runtun waktu atau \textit{Time Series Plot}. dan cara pakai Plot Garis ini seperti pada kode berikut:
+\lstinputlisting[firstline=23, lastline=31]{src/6/1174083/Teori/1174083.py}
+\begin{figure}[ht]	
+    \includegraphics[width=4cm]{figures/6/1174083/Teori/2.png}
+    \centering
+    \caption{contoh Plot Garis}
+    \label{2}
+\end{figure}
+\newpage
+\item Plot Sebaran atau Scatter Plot \hfill \break
+adalah sebuah grafik yang menunjukkan hubungan antara dua set data. dan cara pakai Plot Sebaran atau Scatter ini seperti pada kode berkut:
+\lstinputlisting[firstline=35, lastline=43]{src/6/1174083/Teori/1174083.py}
+\begin{figure}[ht]	
+    \includegraphics[width=4cm]{figures/6/1174083/Teori/3.png}
+    \centering
+    \caption{contoh Plot Scatter}
+    \label{3}
+\end{figure}
+
+\item Histogram \hfill \break
+adalah grafik yang menampilkan frekuensi data menggunakan batang, dimana angka dikelompokkan dalam rentang tertentu. Dengan kata lain, frekuensi setiap elemen data di dalam daftar ditunjukkan menggunakan histogram. Angka yang dikelompokkan dalam bentuk rentang tertentu disebut \textit{bins}. Untuk cara penggunaanya seperti pada kode berikut:
+\lstinputlisting[firstline=46, lastline=53]{src/6/1174083/Teori/1174083.py}
+\begin{figure}[ht]	
+    \includegraphics[width=4cm]{figures/6/1174083/Teori/4.png}
+    \centering
+    \caption{contoh Histogram}
+    \label{4}
+\end{figure}
+
+\item Bar \hfill \break
+Diagram Batang (\textit{bar Chart}) adalah diagram yang menggambarkan data dengan menggunakan batang vertikal atau horizontal yang memiliki tinggi atau panjang yang menunjukan frekuensi data. untuk pemakainannya seperti pada kode berikut:
+\lstinputlisting[firstline=56, lastline=66]{src/6/1174083/Teori/1174083.py}
+\begin{figure}[ht]	
+    \includegraphics[width=5cm]{figures/6/1174083/Teori/5.png}
+    \centering
+    \caption{contoh Bar}
+    \label{5}
+\end{figure}
+\end{enumerate}
+
+\subsubsection{Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut}
+\hfill \break
+Legend merupakan bagian dalam grafik yang isinya adalah keterangan dari grafik tersebut. dan label ialah untuk penamaan pada grafik tersebut. Dan cara menggunakan Legend dan lebel cukup mudah, seperti pada kode berikut:
+\lstinputlisting[firstline=40, lastline=42]{src/6/1174083/Teori/1174083.py}
+contohnya ada pada \textbf{gambar 1.3} dimana legend berada pada pojok kiri bawah, dan dan contoh labelnya x dan y.
+
+\subsubsection{Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya}
+\hfill \break
+Fungsi subplot di matplotlib ialah untuk menggabungkan beberapa grafik menjadi satu figure. dan cara kerja dari fungsi subplot ini bisa dilihat pada kode berikut:
+\lstinputlisting[firstline=69, lastline=81]{src/6/1174083/Teori/1174083.py}
+\begin{figure}[ht]	
+    \includegraphics[width=10cm]{figures/6/1174083/Teori/6.png}
+    \centering
+    \caption{contoh Subplot}
+    \label{5}
+\end{figure}
+\subsubsection{Sebutkan semua parameter color yang bisa digunakan (contoh: m,c,r,k,... dkk)}
+\hfill \break
+Untuk Nama-nama parameter yang basic seperti pada RGB dan CYMK bisa digunakan seperti berikut:
+\begin{itemize}
+\item R untuk Red atau Merah
+\item G untuk Green atau Hijau
+\item B untuk Blue atau Biru
+\item C untuk Cyan atau Biru Muda
+\item Y untuk Yellow atau Kuning
+]item M untuk Magenta atau Merah Tua
+\item K untuk Black atau Hitam
+\end{itemize}
+dan Berikut merupakan daftar warna yang ada pada matplotlib
+\begin{figure}[ht]	
+    \includegraphics[width=13cm]{figures/6/1174083/Teori/warna.png}
+    \centering
+    \caption{Daftar warna}
+    \label{6}
+\end{figure}
+
+\subsubsection{Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri}
+\hfill \break
+Untuk histogram kita tidak boleh memiliki isi variable x dan y yang sama. Misal x-nya ada 10 nilai sedangkan Y-nya ada 5 nilai, data tersebut tidak menjadi masalah karena pada histogram data yang dimunculkan adalah data rentang dari data variable y. Dan ini adalah contoh dari penggunaan histogram
+
+\lstinputlisting[firstline=134, lastline=138]{src/6/1174083/Teori/1174083.py}
+\begin{figure}[ht]	
+    \includegraphics[width=4cm]{figures/6/1174083/Teori/7.png}
+    \centering
+    \caption{cara kerja fungsi hist}
+    \label{6}
+\end{figure}
+\newpage
+\subsubsection{Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct}
+\begin{enumerate}
+\item Labels Label digunakan untuk mempermudah pembaca dalam membaca diagram pie
+\item Colors  warna digunakan untuk membedakan antar data
+\item Statangle digunakan untuk sudut yang berguna untuk memulai diagram pie tersebut
+\item Shadow digunakan untuk membuat bayangan dari setiap diagram pie yang menonjol
+\item Explode digunakan untuk mengeluarkan suatu data agar data tersebut terlihat menonjol
+\item Autobot digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
