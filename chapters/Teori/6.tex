@@ -1,4 +1,4 @@
-\section{Dini Permata Putri}
+﻿\section{Dini Permata Putri}
 \begin{enumerate}
 
 
@@ -477,3 +477,114 @@ Untuk histogram kita tidak boleh memiliki isi variable x dan y yang sama. Misal 
 \item Autobot digunakan sesuai dengan berapa angka dibelakang koma yang kita inginkan
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Ilham Muhammad Ariq}
+\subsection{Pemahaman Teori}
+\begin{enumerate}
+\item Apa itu fungsi library matplotlib
+
+	Matplotlib adalah sebuah library plotting 2D Python yang menghasilkan gambar publikasi bermutu didalam berbagai format hardcopy dan lingkungan interaktif sepanjang platform. Matplotlib bisa digunakan didalam sebuah script Python, shell Python dan ipython (ala MATLAB®* or Mathematica®), server aplikasi web, dan enam GUI toolkit. Matplotlib mencoba untuk membuat hal yang mudah menjadi lebih mudah dan hal yang sulit menjadi mungkin. Dengan matplotlib,dapat membuat plot, histogram, power spectra, grafik batang, grafik error, scatterplot, dll, hanya dengan beberapa baris code.
+
+\item Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib
+\begin{enumerate}
+	\item pertama import dulu library matplotlib lalu beri alias plt
+	\lstinputlisting[firstline=8, lastline=8]{src/6/1174087/Teori/1174087_matplotlib.py}
+
+	\item Kemudian buat variable array x dengan isi terserah anda
+	\lstinputlisting[firstline=9, lastline=9]{src/6/1174087/Teori/1174087_matplotlib.py}
+
+	\item Lalu buat variable array y juga dengan isi terserah anda yang penting jumlahnya sama dengan variable X
+	\lstinputlisting[firstline=10, lastline=10]{src/6/1174087/Teori/1174087_matplotlib.py}
+
+	\item Kemudian buat plot berisikan variable x dan y pada modul plt
+	\lstinputlisting[firstline=11, lastline=11]{src/6/1174087/Teori/1174087_matplotlib.py}
+
+	\item Yang terakhir, munculkan plot yang telah kita buat dengan fungsi show()
+	\lstinputlisting[firstline=12, lastline=12]{src/6/1174087/Teori/1174087_matplotlib.py}
+\end{enumerate}
+
+\item Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib
+
+Perbedaan pada fungsi plot adalah pada bentuk gambar grafik yang dihasilkan pada program dan jenis jenis grafik yang ada pada plot adalah:
+\begin{itemize}
+	\item Plot
+
+	Grafik yang dihasilkan adalah sebuah garis 
+	\lstinputlisting[firstline=8, lastline=12]{src/6/1174087/Teori/1174087_matplotlib.py}
+
+	\item Bar
+
+	Grafik yang dihasilkan adalah sebuah bentuk grafik batang
+	\lstinputlisting[firstline=15, lastline=19]{src/6/1174087/Teori/1174087_matplotlib.py}
+
+	\item Histogram
+
+	grafik yang menampilkan sebuah frekuensi data menggunakan batang/bar , dimana angka dikelompokkan dalam rentang tertentu
+	\lstinputlisting[firstline=22, lastline=25]{src/6/1174087/Teori/1174087_matplotlib.py}
+
+	\item Scatter
+
+	Grafik yang dihasilkan diagram titik 
+	\lstinputlisting[firstline=28, lastline=39]{src/6/1174087/Teori/1174087_matplotlib.py}
+\end{itemize}
+
+	\item  Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut
+
+	Untuk menggunakan legend definisikan parameter label di tiap fungsi plot. Parameter label digunakan untuk memberikan label pada line sebagai pembeda antar line.
+	\lstinputlisting[firstline=33, lastline=38]{src/6/1174087/Teori/1174087_matplotlib.py}
+	
+	\item Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya
+	
+	\par Fungsi subplot adalah untuk membuat beberapa plot di dalam satu gambar.
+	\par Cara kerja subplot, yaitu fungsi subplot memiliki parameter pertama adalah jumlah kolom, parameter kedua adalah jumlah baris, dan parameter ketiga adalah index plot keberapanya.	
+	
+	\lstinputlisting[firstline=42, lastline=62]{src/6/1174087/Teori/1174087_matplotlib.py}
+	
+	\item Sebutkan semua parameter color yang bisa digunakan (contoh: m,c,r,k,... dkk)
+	
+	\begin{itemize}
+	\item 'b' (blue) = biru
+	\item 'g' (green) = hijau
+	\item 'r' (red) = merah
+	\item 'c' (cyan) = biru muda
+	\item 'm' (magenta) = marron 
+	\item 'y' (yellow) = kuning
+	\item 'k' (black) = hitam
+	\item 'w' (white) = putih
+	\end{itemize}
+		
+	\item Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri		
+	
+	\par Untuk histogram variable x dan y tidak ada yang sama. Misal X nya ada 10 angka sedangkan Y nya ada 2 nilai, data tersebut tidak akan error karena pada histogram data yang dimunculkan adalah data rentang dari data variable y. Dan ini adalah contoh program :
+	
+		\lstinputlisting[firstline=22, lastline=25]{src/6/1174087/Teori/1174087_matplotlib.py}
+	
+	\item Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct
+
+\begin{itemize}
+    \item \textbf{Label}
+    Label digunakan untuk mempermudah pembaca yaitu memberikan nama pada variable di grafik
+
+    \item \textbf{Color}
+    Warna yang dimunculkan pada setiap data
+
+    \item \textbf{Startangle}
+    Startangle digunakan untuk sudut awal pada diagram pie tersebut
+
+    \item \textbf{Shadow}
+    Shadow(Bayangan) digunakan untuk membuat bayangan pada setiap diagram pie yang menonjol
+
+    \item \textbf{Explode}
+    Explode digunakan untuk mengeluarkan suatu data agar data tersebut menjadi terlihat lebih menonjol
+
+    \item \textbf{Autopct}
+    Autopct digunakan menyesuaikan berapa angka yang ada dibelakang koma
+\end{itemize}
+\end{enumerate}
+
+\textbf{Screenshoot Plagiarisme}
+\begin{figure}[ht]	
+    \includegraphics[width=7cm]{figures/6/1174087/Teori/plg.png}
+    \centering
+    \caption{Screenshoot Plagiarisme}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
